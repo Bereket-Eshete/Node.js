@@ -1,5 +1,4 @@
-const date = require("date-fns");
-const { v4: uuid } = require("uuid");
+import { format } from "date-fns";
+import { v4 } from "uuid";
 
-const { format } = date;
-console.log(format(new Date(), "yyyy-MM-dd\tHH:mm:ss"), uuid());
+console.log(format(new Date(), "yyyy-MM-dd\tHH:mm:ss"), v4());
